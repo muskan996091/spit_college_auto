@@ -15,78 +15,37 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
 
-    table {
-  display: table;
-  border-collapse: separate;
-  border-spacing: 2px;
-  border-color: gray;
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+  margin: auto;
+  font-family: arial;
+  padding:20px;
+  transition: 0.3s;
+  margin: 35px;
+
 }
 
-
-    .container {
-  position: relative;
-  width: 100%;
-        padding-left: 4px;
-        padding-right: 0px;
-}
-
-    th, td {
-  padding: 0px;
-}
-    table{
-        border-color: #111111;
-    }
-
-.image {
-  height: 550px;
-  width: 375px;
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(2px);
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
+.price {
+  color: grey;
+  font-size: 22px;
 }
 
 .text {
-  background-color: #294a70;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  color: black;
+  font-size: 17px;
 }
 
-    p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-    .header {
+.header {
   background-color: #111111;
 
 }
-    .headf{
+.headf{
         background-color: #294a70 ;
         z-index: -1;
     }
@@ -99,46 +58,50 @@
     <a href="http://www.spit.ac.in/"><img src="https://www.spit.ac.in/wp-content/themes/spit-main/images/red/logo.gif" style="padding-top: 7px;"></a>
 </div>
 <div class="headf" style="height: 30px;">
-    <i style="color: #ffffff; padding-left:25px; ">College Automation Portal For Auxillary tasks</i>
+    <i style="color: #ffffff; padding-left:25px; ">Alumni Search Portal for Authority</i>
 </div>
 
-<table>
-    <tr>
-        <td>
-           <div class="container">
-                <img src="https://www.timesheets.com/blog/wp-content/uploads/2017/03/Role-call.jpg" alt="Avatar" class="image" >
-                <div class="middle">
-                    <a href="/request/login_attend/"><div class="text">Attendance Grant</div></a>
-                </div>
-           </div>
+<div class="card">
+    <table>
+        <tr>
+            <td style="width: 200px">
+                <img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="Denim Jeans" style="height:200px; padding-right:20px">
+            </td>
+            <td>
+                <h1>Rahul Soni</h1>
+                  <p class="price"> Computers 2021 Batch</p>
+                  <p class="price" style="color: #555555">Morgan Stanley</p>
+            </td>
+            <td>
+                <h1></h1>
+                  <p class="text">Email: rahul.soni@spit.ac.in</p>
+                  <p class="text">Phone: 9898989898</p>
+            </td>
+        </tr>
+    </table>
+</div>
 
-        <td>
-           <div class="container">
-                <img src="https://i.pinimg.com/736x/be/bb/a5/bebba5b2afd1e10d693c7d871cbc6e35.jpg" alt="Avatar" class="image" >
-                <div class="middle">
-                    <a href="/request/key_login/"><div class="text">Key Permission</div></a>
-                </div>
-           </div>
-        </td>
-        <td>
-           <div class="container">
-                <img src="https://study.com/cimages/multimages/16/professionals2.jpg" style="filter: blur(1px);" alt="Avatar" class="image" >
-                <div class="middle">
-                    <div class="text">Alumni Tracking</div>
-                </div>
-           </div>
-        </td>
-        <td>
-           <div class="container">
-                <img src="https://609200810204-drupal-cms-production.s3.eu-west-2.amazonaws.com/drupal-icbs/public/styles/focalpoint_5x3_960/public/2019-07/mba%20chat%20to%20our%20students.jpg?1B9cDl5TsSzdABh7omxgmcCmAP3any31&h=b3e28b34&itok=hw26yA2Xg" alt="Avatar" class="image" >
-                <div class="middle">
-                    <a href="/request/login_stud/"><div class="text">Student Login</div></a>
-                </div>
-           </div>
-        </td>
-    </tr>
-</table>
+<div class="card">
+    <table>
+        <tr>
+            <td style="width: 200px">
+                <img src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="Denim Jeans" style="height:200px; padding-right:20px">
+            </td>
+            <td>
+                <h1>Rahul Soni</h1>
+                  <p class="price"> Computers 2021 Batch</p>
+                  <p class="price" style="color: #555555">Morgan Stanley</p>
+            </td>
+            <td>
+                <h1></h1>
+                  <p class="text">Email: rahul.soni@spit.ac.in</p>
+                  <p class="text">Phone: 9898989898</p>
+            </td>
+        </tr>
+    </table>
+</div>
 
+<br><br><br>
 <div class="w3-container w3-black">
     <p align="center" style="color: #9F9F9F; font-size: small">Bharatiya Vidya Bhavans Sardar Patel Institute of Technology Munshi Nagar, Andheri (West), Mumbai 400 058</p>
 <p align="center" style="font-size: small">(91)-(022)-26707440, 26287250</p>
